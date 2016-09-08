@@ -1,0 +1,34 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable",
+    "emitEntryPoint": true
+  },
+  "dependencies": {
+    
+  },
+   "commands": {
+        "web": "Microsoft.AspNet.Server.Kestrel --server.urls http://localhost:5004"
+    },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0"
+        },
+        "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-*",
+        "Microsoft.AspNetCore.Diagnostics": "1.0.0-*",
+        "Microsoft.Extensions.PlatformAbstractions": "1.0.0-*",
+        "Microsoft.Extensions.Configuration" : "1.0.0-*",
+        "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0-*",
+        "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0-*",
+        "Microsoft.Extensions.Configuration.Json": "1.0.0-*",
+        "Serilog.Extensions.Logging": "1.2.0",
+        "Serilog.Sinks.ColoredConsole": "2.0.0",
+        "Microphone.AspNet" : "0.6.6"
+      },
+      "imports": "dnxcore50"
+    }
+  }
+}
